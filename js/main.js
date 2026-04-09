@@ -107,9 +107,6 @@ function renderHeader(rubroActivo = null) {
         <a href="/index.html" class="nav-item ${!rubroActivo ? 'active' : ''}">Inicio</a>
         ${navLinks}
       </nav>
-    
-       /* A- */
-    
   `;
 
   /* A-
