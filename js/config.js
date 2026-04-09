@@ -25,7 +25,7 @@ const DYR_CONFIG = {
       icon: "wave",
       color: "#0b6e8a",
       colorAccent: "#4ecdc4",
-      pagina: "/templates/marino.html",
+      pagina: "templates/marino.html",
       descripcion: "Pescados frescos, mariscos, algas y congelados directos del Terminal Pesquero VMT.",
       img: "img/hero_marino.jpg",
     },
