@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrícola | D&R Distribución Mayorista</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    :root {
+      --rubro-color:  #2d6a1f;
+      --rubro-accent: #8bc34a;
+    }
+    @media(max-width:768px){
+      .catalogo-layout { padding: 20px 0 60px; }
+      .sidebar { margin-bottom: 16px; }
+      #btn-filtros-mobile { display:flex !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header" id="site-header"></header>
+  <section class="rubro-hero" id="rubro-hero"></section>
+
+  <section style="background:var(--lighter)">
+    <div class="container">
+      <div class="catalogo-layout">
+        <aside class="sidebar" id="sidebar"></aside>
+        <main id="catalogo-main">
+          <div class="catalogo-toolbar" id="catalogo-toolbar"></div>
+          <div class="producto-grid" id="producto-grid"></div>
+          <div class="paginacion" id="paginacion"></div>
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <div class="carrito" id="carrito">
+    <div class="carrito-header" id="carrito-toggle">
+      <span>🛒</span>
+      <span class="carrito-titulo">Mi Pedido</span>
+      <span class="carrito-badge" id="carrito-badge">0</span>
+      <span class="carrito-chevron" id="carrito-chevron">▲</span>
+    </div>
+    <div class="carrito-body" id="carrito-body">
+      <div class="carrito-lista" id="carrito-lista">
+        <p class="carrito-vacio">Aún no has agregado productos.</p>
+      </div>
+      <div class="carrito-footer">
+        <button class="btn-limpiar" id="btn-limpiar">🗑 Limpiar</button>
+        <button class="btn-enviar" id="btn-enviar">
+          <img src="img/whatsapp_logo_icon_186881.png" alt="WhatsApp" class="wsp-icon"
+               onerror="this.style.display='none'">
+          Enviar Pedido
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <a class="float-wsp" id="float-wsp" href="#" target="_blank">
+    <img src="img/whatsapp_logo.png" alt="WhatsApp"
+         onerror="this.parentElement.innerHTML='<span style=font-size:1.5rem>-L-</span>'">
+  </a>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/catalogo.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const RUBRO_ID = 'agricola';
+      renderHeader(RUBRO_ID);
+      renderFooter();
+      renderRubroHero(RUBRO_ID);
+      initCatalogo(RUBRO_ID);
+    });
+  </script>
+</body>
+</html>
