@@ -1,12 +1,5 @@
-<<<<<<< HEAD
-/* ================================================================
-   D&R DISTRIBUIDORA — LÓGICA GLOBAL
-   main.js · Carrito, WhatsApp, Nav, Header/Footer dinámico
-   ================================================================ */
 
-/* ================================================================
-   CARRITO (estado global)
-   ================================================================ */
+
 let carrito = [];
 let carritoVisible = true;
 
@@ -76,7 +69,7 @@ function renderCarrito() {
 
 function enviarPedidoWhatsApp() {
   if (carrito.length === 0) {
-    alert('⚠️ Agrega al menos un producto antes de enviar tu pedido.');
+    alert(' Agrega al menos un producto antes de enviar tu pedido.');
     return;
   }
   let texto = 'Hola D&R, me gustaría hacer el siguiente pedido:\n\n';
@@ -201,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   renderCarrito();
 });
-=======
+
 // Cargar header
 fetch("components/header.html")
     .then(response => response.text())
@@ -243,4 +236,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
->>>>>>> 07f55c28f6ded0376e904dead08f4063615b886e
+
