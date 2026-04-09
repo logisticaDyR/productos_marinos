@@ -98,29 +98,32 @@ function renderHeader(rubroActivo = null) {
 
   header.innerHTML = `
     <div class="container header-inner">
-      <a href="index.html" class="header-logo">
+      <a href="/index.html" class="header-logo">
         <img src="img/logo.jpg" alt="D&R Logo" onerror="this.style.display='none'">
         <span class="logo-text">D<span>&</span>R</span>
       </a>
 
       <nav class="header-nav" id="main-nav">
-        <a href="index.html" class="nav-item ${!rubroActivo ? 'active' : ''}">Inicio</a>
+        <a href="/index.html" class="nav-item ${!rubroActivo ? 'active' : ''}">Inicio</a>
         ${navLinks}
       </nav>
+    
+       /* A- */
+    
+  `;
 
+  /* A-
+  </div>
       <div class="header-actions">
         <a href="${wspUrl}" target="_blank" class="btn-wsp-header">
-          <img src="img/miniaturas/whatsapp.png" alt="WhatsApp" class="wsp-icon2" style="height: 20px; height: 20px;" onerror="this.style.display='none'">
+          <img src="/img/miniaturas/whatsapp.png" alt="WhatsApp" class="wsp-icon2" style="height: 20px; height: 20px;" onerror="this.style.display='none'">
           <span>WhatsApp</span>
         </a>
         <button class="hamburger" id="hamburger" aria-label="Menú">
           <span></span><span></span><span></span>
         </button>
       </div>
-    </div>
-  `;
-
-  /* Hamburger toggle */
+  */
   document.getElementById('hamburger')?.addEventListener('click', () => {
     const nav = document.getElementById('main-nav');
     nav?.classList.toggle('open');

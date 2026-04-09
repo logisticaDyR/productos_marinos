@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ferretería | D&R Distribución Mayorista</title>
-  <link rel="stylesheet" href="css/styles.css">
- 
+  <title>Agrícola | D&R Distribución Mayorista</title>
+  <link rel="stylesheet" href="/css/styles.css">
   <style>
     :root {
-      --rubro-color:  #7a3500;
-      --rubro-accent: #e8820c;
+      --rubro-color:  #2d6a1f;
+      --rubro-accent: #8bc34a;
     }
     @media(max-width:768px){
       .catalogo-layout { padding: 20px 0 60px; }
@@ -38,7 +37,7 @@
 
   <div class="carrito" id="carrito">
     <div class="carrito-header" id="carrito-toggle">
-      
+      <span>🛒</span>
       <span class="carrito-titulo">Mi Pedido</span>
       <span class="carrito-badge" id="carrito-badge">0</span>
       <span class="carrito-chevron" id="carrito-chevron">▲</span>
@@ -48,7 +47,7 @@
         <p class="carrito-vacio">Aún no has agregado productos.</p>
       </div>
       <div class="carrito-footer">
-        <button class="btn-limpiar" id="btn-limpiar">Limpiar</button>
+        <button class="btn-limpiar" id="btn-limpiar">🗑 Limpiar</button>
         <button class="btn-enviar" id="btn-enviar">
           <img src="img/whatsapp_logo_icon_186881.png" alt="WhatsApp" class="wsp-icon"
                onerror="this.style.display='none'">
@@ -70,7 +69,7 @@
   <script src="js/catalogo.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const RUBRO_ID = 'ferreteria';
+      const RUBRO_ID = 'agricola';
       renderHeader(RUBRO_ID);
       renderFooter();
       renderRubroHero(RUBRO_ID);
