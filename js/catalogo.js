@@ -263,10 +263,7 @@ function buildCard(prod, i) {
       <div class="card-img">
         <img src="${prod.img}" alt="${prod.nombre}" loading="lazy"
              onerror="this.src='img/placeholder.jpg'">
-        <div class="card-badges">
-          <span class="badge ${badgeClass[prod.venta]}">${badgeLabel[prod.venta]}</span>
-          ${prod.destacado ? '<span class="badge badge-destacado">⭐ Destacado</span>' : ''}
-        </div>
+        
         <div class="card-quick">
           <button class="quick-btn" title="Vista rápida">👁</button>
         </div>
