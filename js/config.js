@@ -37,7 +37,7 @@ const DYR_CONFIG = {
       icon: "leaf",
       color: "#2d6a1f",
       colorAccent: "#8bc34a",
-      pagina: "/templates/agricola.html",
+      pagina: "templates/agricola.html",
       descripcion: "Frutas, verduras y tubérculos frescos de primera calidad, directo del campo.",
       img: "img/hero_agricola.jpg",
     },
@@ -48,7 +48,7 @@ const DYR_CONFIG = {
       icon: "wrench",
       color: "#7a3500",
       colorAccent: "#e8820c",
-      pagina: "/templates/ferreteria.html",
+      pagina: "templates/ferreteria.html",
       descripcion: "Herramientas, materiales de construcción y artículos para el hogar.",
       img: "img/hero_ferreteria.jpg",
     },
@@ -59,7 +59,7 @@ const DYR_CONFIG = {
       icon: "basket",
       color: "#5c2d91",
       colorAccent: "#ab47bc",
-      pagina: "/templates/abarrotes.html",
+      pagina: "templates/abarrotes.html",
       descripcion: "Productos de primera necesidad, conservas, aceites, azúcar y más.",
       img: "img/hero_abarrotes.jpg",
     },
@@ -85,35 +85,35 @@ const DYR_CONFIG = {
   productos: [
 
     /* ── MARINO · PESCADOS ── */
-    { id:"corvina",    rubro:"marino", categoria:"pescados",   nombre:"Corvina Fresca",        emoji:"", img:"/img/pescados/corvina.webp",  desc:"Corvina entera o fileteada, captura del día. Ideal para ceviche y sudados.",         unidad:"Por kilo ",  precio:"", venta:"ambos",     destacado:false  },
-    { id:"jurel",      rubro:"marino", categoria:"pescados",   nombre:"Jurel Fresco",           emoji:"", img:"/img/pescados/jurel.webp",  desc:"Jurel de alta calidad, fresco y sin escamas. Perfecto para frituras y guisos.",      unidad:"Por kilo ",          precio:"", venta:"ambos",     destacado:false },
-    { id:"bonito",     rubro:"marino", categoria:"pescados",   nombre:"Bonito Fresco",          emoji:"", img:"/img/pescados/bonito.webp",  desc:"Bonito entero o en trozos. Muy apreciado para anticuchos y escabeche.",             unidad:"Por kilo ",          precio:"", venta:"ambos",     destacado:false },
-    { id:"caballa",    rubro:"marino", categoria:"pescados",   nombre:"Caballa Fresca",         emoji:"", img:"/img/pescados/caballa.jpg",  desc:"Caballa de temporada, ideal para conservas caseras, parrilla y sopas.",             unidad:"Por kilo",                     precio:"", venta:"minorista", destacado:false },
-    { id:"merluza",    rubro:"marino", categoria:"pescados",   nombre:"Merluza Fresca",         emoji:"", img:"/img/pescados/merluza.jpg",  desc:"Merluza entera. Carne blanca y suave, muy versátil en la cocina.",                 unidad:"Por kilo ",          precio:"", venta:"ambos",     destacado:false },
-    { id:"pejerrey",   rubro:"marino", categoria:"pescados",   nombre:"Pejerrey Fresco",        emoji:"", img:"/img/pescados/pejerrey.jpg",  desc:"Pejerrey de calidad, pequeño y sabroso. Ideal para freír.",                         unidad:"Por kilo",                     precio:"", venta:"minorista", destacado:false },
+    { id:"corvina",    rubro:"marino", categoria:"pescados",   nombre:"Corvina Fresca",        emoji:"", img:"img/pescados/corvina.webp",  desc:"Corvina entera o fileteada, captura del día. Ideal para ceviche y sudados.",         unidad:"Por kilo ",  precio:"", venta:"ambos",     destacado:false  },
+    { id:"jurel",      rubro:"marino", categoria:"pescados",   nombre:"Jurel Fresco",           emoji:"", img:"img/pescados/jurel.webp",  desc:"Jurel de alta calidad, fresco y sin escamas. Perfecto para frituras y guisos.",      unidad:"Por kilo ",          precio:"", venta:"ambos",     destacado:false },
+    { id:"bonito",     rubro:"marino", categoria:"pescados",   nombre:"Bonito Fresco",          emoji:"", img:"img/pescados/bonito.webp",  desc:"Bonito entero o en trozos. Muy apreciado para anticuchos y escabeche.",             unidad:"Por kilo ",          precio:"", venta:"ambos",     destacado:false },
+    { id:"caballa",    rubro:"marino", categoria:"pescados",   nombre:"Caballa Fresca",         emoji:"", img:"img/pescados/caballa.jpg",  desc:"Caballa de temporada, ideal para conservas caseras, parrilla y sopas.",             unidad:"Por kilo",                     precio:"", venta:"minorista", destacado:false },
+    { id:"merluza",    rubro:"marino", categoria:"pescados",   nombre:"Merluza Fresca",         emoji:"", img:"img/pescados/merluza.jpg",  desc:"Merluza entera. Carne blanca y suave, muy versátil en la cocina.",                 unidad:"Por kilo ",          precio:"", venta:"ambos",     destacado:false },
+    { id:"pejerrey",   rubro:"marino", categoria:"pescados",   nombre:"Pejerrey Fresco",        emoji:"", img:"img/pescados/pejerrey.jpg",  desc:"Pejerrey de calidad, pequeño y sabroso. Ideal para freír.",                         unidad:"Por kilo",                     precio:"", venta:"minorista", destacado:false },
 
     /* ── MARINO · MARISCOS ── */
-    { id:"langostinos",rubro:"marino", categoria:"mariscos",   nombre:"Langostinos Frescos",    emoji:"", img:"/img/mariscos/langostino.jpg", desc:"Langostinos grandes y medianos, frescos y limpios. Por kilo o balde.",              unidad:"Por kilo ",        precio:"", venta:"ambos",     destacado:false  },
-    { id:"conchas",    rubro:"marino", categoria:"mariscos",   nombre:"Conchas de Abanico",     emoji:"", img:"/img/mariscos/conchas_abanico.jpg", desc:"Conchas frescas directas del terminal. Ideales para ceviches y tiraditos.",         unidad:"Por docena",        precio:"", venta:"ambos",     destacado:false },
-    { id:"pota",       rubro:"marino", categoria:"mariscos",   nombre:"Pota / Calamar Gigante", emoji:"", img:"/img/mariscos/pota.jpg", desc:"Pota entera o en trozos. Muy usada en guisos, sudados y a la plancha.",             unidad:"Por kilo ", precio:"", venta:"mayorista", destacado:false },
-    { id:"pulpo",      rubro:"marino", categoria:"mariscos",   nombre:"Pulpo Fresco",           emoji:"", img:"/img/mariscos/pulpo.webp", desc:"Pulpo fresco de roca, limpio y listo para cocinar.",                               unidad:"Por kilo",                     precio:"", venta:"ambos",     destacado:false },
-    { id:"cangrejo",   rubro:"marino", categoria:"mariscos",   nombre:"Cangrejo / Jaiba",       emoji:"", img:"/img/mariscos/cangrejo.webp", desc:"Cangrejo fresco, ideal para parihuela y sopas marinas.",                           unidad:"Por unidad ",        precio:"", venta:"ambos",     destacado:false },
+    { id:"langostinos",rubro:"marino", categoria:"mariscos",   nombre:"Langostinos Frescos",    emoji:"", img:"img/mariscos/langostino.jpg", desc:"Langostinos grandes y medianos, frescos y limpios. Por kilo o balde.",              unidad:"Por kilo ",        precio:"", venta:"ambos",     destacado:false  },
+    { id:"conchas",    rubro:"marino", categoria:"mariscos",   nombre:"Conchas de Abanico",     emoji:"", img:"img/mariscos/conchas_abanico.jpg", desc:"Conchas frescas directas del terminal. Ideales para ceviches y tiraditos.",         unidad:"Por docena",        precio:"", venta:"ambos",     destacado:false },
+    { id:"pota",       rubro:"marino", categoria:"mariscos",   nombre:"Pota / Calamar Gigante", emoji:"", img:"img/mariscos/pota.jpg", desc:"Pota entera o en trozos. Muy usada en guisos, sudados y a la plancha.",             unidad:"Por kilo ", precio:"", venta:"mayorista", destacado:false },
+    { id:"pulpo",      rubro:"marino", categoria:"mariscos",   nombre:"Pulpo Fresco",           emoji:"", img:"img/mariscos/pulpo.webp", desc:"Pulpo fresco de roca, limpio y listo para cocinar.",                               unidad:"Por kilo",                     precio:"", venta:"ambos",     destacado:false },
+    { id:"cangrejo",   rubro:"marino", categoria:"mariscos",   nombre:"Cangrejo / Jaiba",       emoji:"", img:"img/mariscos/cangrejo.webp", desc:"Cangrejo fresco, ideal para parihuela y sopas marinas.",                           unidad:"Por unidad ",        precio:"", venta:"ambos",     destacado:false },
                        
 
     /* ── MARINO · ALGAS 
     { id:"cochayuyo",  rubro:"marino", categoria:"algas",      nombre:"Cochayuyo (Alga Seca)",  emoji:"", img:"img/pescados.jpg", desc:"Alga marina seca de alta calidad. Rica en minerales y fibra.",                    unidad:"Por 100g / Por kg",            precio:"", venta:"ambos",     destacado:false },
     ── */
-    { id:"yuyo",       rubro:"marino", categoria:"algas",      nombre:"Yuyo Fresco",            emoji:"", img:"/img/algas/yuyo.webp", desc:"Yuyo fresco, alga marina consumida en ensaladas y ceviches.",                     unidad:"Por manojo / Por kilo",        precio:"", venta:"minorista", destacado:false },
+    { id:"yuyo",       rubro:"marino", categoria:"algas",      nombre:"Yuyo Fresco",            emoji:"", img:"img/algas/yuyo.webp", desc:"Yuyo fresco, alga marina consumida en ensaladas y ceviches.",                     unidad:"Por manojo / Por kilo",        precio:"", venta:"minorista", destacado:false },
 
     /* ── MARINO · PROCESADOS ── */
-    { id:"filete_corv",rubro:"marino", categoria:"procesados", nombre:"Filete de Corvina",      emoji:"", img:"/img/procesados/filete_corvina.webp",   desc:"Filete limpio de corvina sin espinas, listo para cocinar. Corte profesional.",   unidad:"Por kilo",                     precio:"", venta:"ambos",     destacado:false  },
-    { id:"trozos_pota",rubro:"marino", categoria:"procesados", nombre:"Trozos de Pota Limpia",  emoji:"", img:"/img/procesados/trozos_pota.webp",   desc:"Pota cortada en cubos o aros, limpia y lista para usar en la cocina.",           unidad:"Por kilo / Por bandeja",       precio:"", venta:"ambos",     destacado:false },
-    { id:"corte_esp",  rubro:"marino", categoria:"procesados", nombre:"Cortes Especiales",      emoji:"", img:"/img/procesados/corte_esp.webp",   desc:"Servicio de corte personalizado para restaurantes y distribuidores.",             unidad:"Por kilo (mín. 5 kg)",         precio:"", venta:"mayorista", destacado:false },
+    { id:"filete_corv",rubro:"marino", categoria:"procesados", nombre:"Filete de Corvina",      emoji:"", img:"img/procesados/filete_corvina.webp",   desc:"Filete limpio de corvina sin espinas, listo para cocinar. Corte profesional.",   unidad:"Por kilo",                     precio:"", venta:"ambos",     destacado:false  },
+    { id:"trozos_pota",rubro:"marino", categoria:"procesados", nombre:"Trozos de Pota Limpia",  emoji:"", img:"img/procesados/trozos_pota.webp",   desc:"Pota cortada en cubos o aros, limpia y lista para usar en la cocina.",           unidad:"Por kilo / Por bandeja",       precio:"", venta:"ambos",     destacado:false },
+    { id:"corte_esp",  rubro:"marino", categoria:"procesados", nombre:"Cortes Especiales",      emoji:"", img:"img/procesados/corte_esp.webp",   desc:"Servicio de corte personalizado para restaurantes y distribuidores.",             unidad:"Por kilo (mín. 5 kg)",         precio:"", venta:"mayorista", destacado:false },
 
     /* ── MARINO · CONGELADOS ── */
     { id:"lang_cong",  rubro:"marino", categoria:"congelados", nombre:"Langostinos Congelados", emoji:"", img:"img/congelados/langostinos_congelados.jpg", desc:"Langostinos IQF, congelados individualmente. Cadena de frío garantizada.",       unidad:"Por kilo",       precio:"", venta:"ambos",     destacado:false },
     { id:"filet_cong", rubro:"marino", categoria:"congelados", nombre:"Filete Merluza Congelado",emoji:"",img:"img/congelados/filete_merluza_congelado.jpg", desc:"Filetes de merluza congelados sin espinas, empacados al vacío.",                 unidad:"Por kilo",                   precio:"", venta:"mayorista", destacado:false },
-    { id:"mix_marino", rubro:"marino", categoria:"congelados", nombre:"Mix de Mariscos",        emoji:"", img:"/img/congelados/mix_mariscos.jpg", desc:"Mezcla de langostinos, calamares y conchas. Ideal para arroces y pastas.",       unidad:"Por kilo",       precio:"", venta:"ambos",     destacado:false },
+    { id:"mix_marino", rubro:"marino", categoria:"congelados", nombre:"Mix de Mariscos",        emoji:"", img:"img/congelados/mix_mariscos.jpg", desc:"Mezcla de langostinos, calamares y conchas. Ideal para arroces y pastas.",       unidad:"Por kilo",       precio:"", venta:"ambos",     destacado:false },
 
     /* ── AGRÍCOLA 
     { id:"papa_blanca",rubro:"agricola",categoria:"tubérculos", nombre:"Papa Blanca",           emoji:"", img:"img/pescados.jpg", desc:"Papa blanca seleccionada, ideal para sopas, guisos y frituras.",                 unidad:"Por saco (50 kg) / Por kilo",  precio:"", venta:"ambos",     destacado:true  },
