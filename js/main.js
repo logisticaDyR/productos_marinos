@@ -98,7 +98,7 @@ function renderHeader(rubroActivo = null) {
 
   header.innerHTML = `
     <div class="container header-inner">
-      <a href="/index.html" class="header-logo">
+      <a href="index.html" class="header-logo">
         <img src="img/logo.jpg" alt="D&R Logo" onerror="this.style.display='none'">
         <span class="logo-text">D<span>&</span>R</span>
       </a>
