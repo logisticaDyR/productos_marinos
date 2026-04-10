@@ -87,8 +87,11 @@ function renderHeader(rubroActivo = null) {
   const header = document.getElementById('site-header');
   if (!header) return;
 
+  const BASE_URL = "https://logisticadyr.github.io/productos_marinos/";
+
   const navLinks = DYR_CONFIG.rubros.map(r => `
-    <a href="${r.pagina}" class="nav-item ${rubroActivo === r.id ? 'active' : ''}">
+    <a href="${BASE_URL}${r.pagina}" 
+       class="nav-item ${rubroActivo === r.id ? 'active' : ''}">
       <span class="nav-item-emoji">${r.emoji}</span>
       ${r.label}
     </a>
@@ -98,17 +101,26 @@ function renderHeader(rubroActivo = null) {
 
   header.innerHTML = `
     <div class="container header-inner">
-      <a href="productos_marinos/index.html" class="header-logo">
-        <img src="img/logo.jpg" alt="D&R Logo" onerror="this.style.display='none'">
+      <a href="${BASE_URL}index.html" class="header-logo">
+        <img src="${BASE_URL}img/logo.jpg" alt="D&R Logo" onerror="this.style.display='none'">
         <span class="logo-text">D<span>&</span>R</span>
       </a>
 
       <nav class="header-nav" id="main-nav">
-        <a href="/index.html" class="nav-item ${!rubroActivo ? 'active' : ''}">Inicio</a>
+        <a href="${BASE_URL}index.html" 
+           class="nav-item ${!rubroActivo ? 'active' : ''}">
+           Inicio
+        </a>
         ${navLinks}
       </nav>
+    </div>
   `;
 
+  document.getElementById('hamburger')?.addEventListener('click', () => {
+    const nav = document.getElementById('main-nav');
+    nav?.classList.toggle('open');
+  });
+}
   /* A-
   </div>
       <div class="header-actions">
@@ -121,12 +133,7 @@ function renderHeader(rubroActivo = null) {
         </button>
       </div>
   */
-  document.getElementById('hamburger')?.addEventListener('click', () => {
-    const nav = document.getElementById('main-nav');
-    nav?.classList.toggle('open');
-  });
-}
-
+  
 /* ================================================================
    RENDER FOOTER
    ================================================================ */
