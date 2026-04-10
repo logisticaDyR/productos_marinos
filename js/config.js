@@ -107,12 +107,12 @@ const DYR_CONFIG = {
 
     /* ── MARINO · PROCESADOS ── */
     { id:"filete_corv",rubro:"marino", categoria:"procesados", nombre:"Filete de Corvina",      emoji:"", img:"img/procesados/filete_corvina.webp",   desc:"Filete limpio de corvina sin espinas, listo para cocinar. Corte profesional.",   unidad:"Por kilo",                     precio:"", venta:"ambos",     destacado:false  },
-    { id:"trozos_pota",rubro:"marino", categoria:"procesados", nombre:"Trozos de Pota Limpia",  emoji:"", img:"img/procesados/trozos_pota.webp",   desc:"Pota cortada en cubos o aros, limpia y lista para usar en la cocina.",           unidad:"Por kilo / Por bandeja",       precio:"", venta:"ambos",     destacado:false },
-    { id:"corte_esp",  rubro:"marino", categoria:"procesados", nombre:"Cortes Especiales",      emoji:"", img:"img/procesados/corte_esp.webp",   desc:"Servicio de corte personalizado para restaurantes y distribuidores.",             unidad:"Por kilo (mín. 5 kg)",         precio:"", venta:"mayorista", destacado:false },
+    { id:"trozos_pota",rubro:"marino", categoria:"procesados", nombre:"Trozos de Pota Limpia",  emoji:"", img:"img/procesados/trozos_pota.jpg",   desc:"Pota cortada en cubos o aros, limpia y lista para usar en la cocina.",           unidad:"Por kilo / Por bandeja",       precio:"", venta:"ambos",     destacado:false },
+    { id:"corte_esp",  rubro:"marino", categoria:"procesados", nombre:"Cortes Especiales",      emoji:"", img:"img/procesados/cortes.jpg",   desc:"Servicio de corte personalizado para restaurantes y distribuidores.",             unidad:"Por kilo (mín. 5 kg)",         precio:"", venta:"mayorista", destacado:false },
 
     /* ── MARINO · CONGELADOS ── */
-    { id:"lang_cong",  rubro:"marino", categoria:"congelados", nombre:"Langostinos Congelados", emoji:"", img:"img/congelados/langostinos_congelados.jpg", desc:"Langostinos IQF, congelados individualmente. Cadena de frío garantizada.",       unidad:"Por kilo",       precio:"", venta:"ambos",     destacado:false },
-    { id:"filet_cong", rubro:"marino", categoria:"congelados", nombre:"Filete Merluza Congelado",emoji:"",img:"img/congelados/filete_merluza_congelado.jpg", desc:"Filetes de merluza congelados sin espinas, empacados al vacío.",                 unidad:"Por kilo",                   precio:"", venta:"mayorista", destacado:false },
+    { id:"lang_cong",  rubro:"marino", categoria:"congelados", nombre:"Langostinos Congelados", emoji:"", img:"img/congelados/conge_langostinos.jpeg", desc:"Langostinos IQF, congelados individualmente. Cadena de frío garantizada.",       unidad:"Por kilo",       precio:"", venta:"ambos",     destacado:false },
+    { id:"filet_cong", rubro:"marino", categoria:"congelados", nombre:"Filete Merluza Congelado",emoji:"",img:"img/congelados/conge_filete_merluza.jpg", desc:"Filetes de merluza congelados sin espinas, empacados al vacío.",                 unidad:"Por kilo",                   precio:"", venta:"mayorista", destacado:false },
     { id:"mix_marino", rubro:"marino", categoria:"congelados", nombre:"Mix de Mariscos",        emoji:"", img:"img/congelados/mix_mariscos.jpg", desc:"Mezcla de langostinos, calamares y conchas. Ideal para arroces y pastas.",       unidad:"Por kilo",       precio:"", venta:"ambos",     destacado:false },
 
     /* ── AGRÍCOLA 
